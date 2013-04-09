@@ -339,7 +339,7 @@ task showTenantDBInfo<<{
 	
     flyway.url= "jdbc:mysql://localhost:3306/$tenantDbName"
     flyway.locations= [
-            "filesystem:.mifosng-db/migrations/core_db",
+            "filesystem:mifosng-db/migrations/core_db",
     ]
     flywayInfo.execute()
 }
